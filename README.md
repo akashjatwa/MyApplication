@@ -13,11 +13,13 @@ The default connection string is stored in `appsettings.json`:
 ## Running the project
 
 1. Install the .NET 6 SDK.
-2. Navigate to the API directory and run the application:
+2. Build or run the application using the solution file:
 
 ```bash
-cd CampBookingApi
-dotnet run
+dotnet build MyApplication.sln
+dotnet run --project CampBookingApi/CampBookingApi.csproj
 ```
+
+Alternatively you can `cd CampBookingApi` and run `dotnet run`.
 
 The API exposes controller-based endpoints to manage camps and customers. You can create, update, or delete camp and customer records through the corresponding `/api/camps` and `/api/customers` endpoints.
